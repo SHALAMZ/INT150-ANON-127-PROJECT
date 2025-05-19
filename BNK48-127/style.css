@@ -56,7 +56,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
   font-weight: bold;
-  line-height: 70px; /* <<< คุมความสูง */
+  line-height: 70px; 
   height: 70px;
   overflow: hidden;
   transition: color 0.5s ease;
@@ -108,14 +108,14 @@ body {
 }
 
 .News-container {
-  max-width: 1180px;       /* ขนาดเท่ากับ .box */
-  margin: 0 auto;          /* จัดตรงกลาง */
+  max-width: 1180px;      
+  margin: 0 auto;         
   display: flex;
   align-items: center;
   gap: 12px;
   padding-bottom: 10px;
-  position: relative;      /* ไม่ต้อง fixed หรือ sticky */
-  padding-left: 0;         /* ลบ padding เดิม */
+  position: relative;      
+  padding-left: 0;         
   padding-right: 0;
 }
 
@@ -131,7 +131,7 @@ body {
 
 .line {
   width: 100%;
-  max-width: 1180px;            /* กว้างสุดเท่ากับ .box */
+  max-width: 1180px;            
   margin-left: auto;
   margin-right: auto;
   height: 1px;
@@ -141,7 +141,7 @@ body {
 }
 .line-1{
   width: 100%;
-  max-width: 1180px;            /* กว้างสุดเท่ากับ .box */
+  max-width: 1180px;            
   margin-left: auto;
   margin-right: auto;
   height: 1px;
@@ -256,20 +256,20 @@ body {
 .viewmore-left:hover::before,
 .viewmore-right:hover::before {
     top: 0;
-    /* ไล่ลงมาจากบนลงล่าง */
+    
 }
 
 .viewmore-left:hover,
 .viewmore-right:hover {
     color: white;
-    /* ยังคงสีเดิม */
+   
 }
 
-/* add item */
+
 .news-items {
     display: flex;
     align-items: flex-start;
-    /* ทำให้ข้อความอยู่ด้านบน */
+    
     gap: 16px;
     margin-top: 20px;
 }
@@ -424,7 +424,6 @@ body {
     font-weight: bold;
     color: #c173bc;
     background-color: #ffeff8;
-    /* กลบเส้นข้างใต้ */
     padding: 0 6px;
 }
 
@@ -481,7 +480,6 @@ body {
 .line-wrapper {
     position: relative;
     flex: 1;
-    /* ทำให้กินพื้นที่ที่เหลือระหว่างโลโก้กับปุ่ม */
     display: flex;
     align-items: center;
 }
@@ -569,15 +567,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px; /* ระยะห่างระหว่างลูกศร ↔ box */
-  margin: 40px 0; /* ระยะห่างบน-ล่าง */
+  gap: 24px; 
+  margin: 40px 0; 
   flex: 1;
   background: #ffeff8;
 }
 
 .member-carousel-pages {
   width: 100%;
-  max-width: 1180px; /* ทำให้ไม่กว้างเกิน */
+  max-width: 1180px; 
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -639,7 +637,7 @@ body {
   transition: opacity 0.15s ease-in-out;
 }
 
-/* หายไปเมื่อ hover */
+
 .member-card:hover .name {
   opacity: 0;
 }
@@ -666,15 +664,15 @@ body {
   gap: 20px 24px;
   justify-items: center;
 
-  width: 100%;            /* เต็มกรอบ .box */
-  padding: 0;             /* ❌ ลบ padding ซ้าย/ขวาออก */
-  margin: 0;              /* ไม่มีระยะห่าง */
+  width: 100%;           
+  padding: 0;             
+  margin: 0;           
   box-sizing: border-box;
 }
 
 
 
-/* คอลัมน์แรก: BNK48 */
+
 .social-left {
   position: relative;
   width: 100%;
@@ -682,14 +680,14 @@ body {
   height: auto;
 }
 
-/* รูป BNK48 */
+
 .social-main-img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* ปุ่มทับบนรูป */
+
 .select-member {
   position: absolute;
   bottom: 20px;
@@ -709,7 +707,7 @@ body {
 }
 
 .select-member:hover {
-  background: #c55287; /* เข้มขึ้นเล็กน้อย */
+  background: #c55287; 
 }
 
 
@@ -720,20 +718,20 @@ body {
   cursor: pointer;
 }
 
-/* รูปเมมเบอร์ */
+
 .social-member-img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* ซ้อนชื่อด้านล่างบนรูป */
+
 .social-username {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 12px;             /* ลดขนาดตัวอักษร */
-  padding: 4px 30px;           /* ลดความสูงและความกว้าง */
+  font-size: 12px;            
+  padding: 4px 30px;           
   border: 1px solid #c96fc2;
   border-radius: 999px;
   color: #c96fc2;
@@ -745,7 +743,7 @@ body {
 }
 
 
-/* Load More ปุ่มอยู่กลางล่าง */
+
 .load-more {
   grid-column: 1 / -1;
   justify-self: center;
@@ -761,7 +759,7 @@ body {
   width: 120px ;
 }
 .load-more:hover {
-  background: #c96fc2; /* เข้มขึ้นเล็กน้อย */
+  background: #c96fc2;
   color: white;
 }
 .footer-social-wrapper {
@@ -769,7 +767,7 @@ body {
   margin-top: 60px;
 }
 
-/* แถวบนสุดของไอคอน Facebook, YouTube, Twitter */
+
 .footer-social-icons {
   display: flex;
   justify-content: center;
@@ -785,15 +783,15 @@ body {
   height: auto;
 }
 
-/* เส้น + ข้อความ "48 GROUP" */
+
 .footer-divider {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   margin: 10px auto;
-  max-width: 1180px; /* ให้ยาวเท่ากับ .box */
-  padding: 0 20px; /* เพิ่มเพื่อให้เส้นไม่ติดขอบ */
+  max-width: 1180px; 
+  padding: 0 20px; 
 }
 
 .footer-divider .line-1 {
@@ -812,7 +810,7 @@ body {
   opacity: 0.8;
 }
 
-/* พีระมิด 48 GROUP */
+
 .footer-group-pyramid {
   display: flex;
   flex-direction: column;

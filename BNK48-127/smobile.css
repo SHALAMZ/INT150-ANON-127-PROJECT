@@ -1,10 +1,8 @@
 /* mobile */
-/* ปุ่ม hamburger default ซ่อนไว้ก่อน */
 .hamburger {
     display: none;
 }
 
-/* MOBILE VIEW */
 @media (max-width: 768px) {
     .navbar-container {
         display: flex;
@@ -41,7 +39,7 @@
         margin: 2px;
     }
 
-    /* ซ่อนเมนูซ้ายขวา */
+    
     .navbar-container .nav-left,
     .navbar-container .nav-right {
         display: none !important;
@@ -61,17 +59,13 @@
 
     .News-container {
         max-width: 1180px;
-        /* ขนาดเท่ากับ .box */
         margin: 0 auto;
-        /* จัดตรงกลาง */
         display: flex;
         align-items: center;
         gap: 12px;
         padding-bottom: 10px;
         position: relative;
-        /* ไม่ต้อง fixed หรือ sticky */
         padding-left: 0;
-        /* ลบ padding เดิม */
         padding-right: 0;
         margin-bottom: -30px;
     }
@@ -100,12 +94,10 @@
         margin: 15px
     }
 
-    /* จัดเรียงแนวตั้ง */
     .news-schedule {
         flex-direction: column;
     }
 
-    /* ปรับกล่องให้แคบลง */
     .news-schedule .box {
         width: 100%;
         max-width: 95%;
@@ -140,7 +132,6 @@
         margin-left: -5px;
     }
 
-    /* ใช้ flex ซ้อน label และ button ในแถวเดียว */
     .line-wrapper {
         display: flex;
         justify-content: space-between;
@@ -227,7 +218,7 @@
         margin: 0 auto;
     }
 
-    /* ซ่อนไปเลยลูกศร */
+
     .arrow {
         display: none;
     }
@@ -333,7 +324,6 @@
         justify-items: center;
         padding: 12px 16px;
         overflow: visible;
-        /* ✅ ป้องกันตัดออก */
     }
 
     .footer-group-pyramid .row {
@@ -345,9 +335,7 @@
         height: auto;
         object-fit: contain;
         display: block;
-        /* ✅ บังคับแสดง */
         visibility: visible;
-        /* ✅ เผื่อถูกซ่อนไว้ */
         background-color: limegreen; /* ใช้ดูว่า box แสดงไหม */    
     }
 
